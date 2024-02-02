@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color:rgb(179, 171, 161);
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%; 
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #384538;
+            padding: 30px 0px;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #bdb8d7;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar ul li a {
+            color: #bdb8d7;
+            display: block;
+        }
+
+        .sidebar ul li a .fas {
+            width: 25px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #594f8d;
+        }
+
+        .sidebar ul li:hover a {
+            color: #fff;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 100px; 
+            margin-bottom: auto;
+        }
+
+        h1 {
+            background-color: darkslategray;
+            font-size: 90px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .text_content {
+            font-size: 40px;
+            color: #000000;
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Nouf's Website</h2>
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-address-card"></i>About Me</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-project-diagram"></i>Portfolio</a></li>
+                <li><a href="interests.html"><i class="fas fa-blog"></i>Interests</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-book"></i>Contact</a></li>
+            </ul> 
+        </div>
+        <div class="main-content">
+            <h1>Detailed Information about me</h1>
+            <article class="text_content">Name: Nouf Abdulaziz Albrkheel<br>
+                     Age:23 <br>
+                     Country: Saudi Arabia 🇸🇦 <br>
+                     City:Riyadh <br>
+                     Major:MIS
+            </article>
+        </div>
+    </div>
+</body>
+</html>
